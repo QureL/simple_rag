@@ -1,0 +1,20 @@
+model:
+  name: "gpt-4o"
+  temperature: 0.7
+  max_tokens: 1000
+
+vector_stores:
+  legal:
+    path: "data/legal"
+    embedding_model: "text-embedding-ada-002"
+  fund:
+    path: "data/fund"
+    embedding_model: "text-embedding-ada-002"
+  history:
+    path: "data/history"
+    embedding_model: "text-embedding-ada-002"
+
+retrieval:
+  chunk_size: 1000
+  chunk_overlap: 200
+  top_k: 3
